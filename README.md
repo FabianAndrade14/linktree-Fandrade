@@ -4,11 +4,14 @@ now i'm here, presenting the new way to show every single social media profile a
 > [!NOTE]
 > This project was made using the basics of web development
 ## Tech Stack used on the Project
-- [x] ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
-- [x] ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-- [x] ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ## Browser View
+This result includes the use of my favorite songs at the moment, and is a pretty good way to do it.
 ![This is the final result of the linktree](assets/img/Views/result.png)
+## Responsive View
+The view in smartphones is going to change thanks to the use of the CSS styles.
 ![This is the final result of the linktree](assets/img/Views/responsive.png)
 > [!IMPORTANT]
 > Everything you do, do it with love
