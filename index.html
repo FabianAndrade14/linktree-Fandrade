@@ -1,44 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/img/deku.ico"/>
-    <title>Fabian's Linktree</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0a0a19">
+  <meta name="description" content="FARIAN: videojuegos, historias y nostalgia. Reseñas, análisis y reflexiones sobre los juegos que nos marcaron.">
+  <link rel="icon" href="assets/img/deku.ico">
+  <title>Fabian's linktree</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Oxanium:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <div class="header floating">
-            <div class="circle-bg"></div>
-            <img src="assets/img/Profile.jpg" alt="Fabian_Andrade" class="avatar">
-        </div>
+  <div class="background-effects" aria-hidden="true">
+    <span class="glow glow-left"></span>
+    <span class="glow glow-right"></span>
+    <span class="grid-overlay"></span>
+  </div>
 
-        <div class="info">
-            <h2>Fabian Camilo Andrade</h2>
-            <p class="tagline">👾 Gamer • 📚 Lector • 🧠 Desarrollador FullStack • 🕸️ </p>
-        </div>
-
-        <div class="buttons">
-            <a href="https://fabian-dev.vercel.app" target="_blank"><i><img src="assets/img/personal.png" alt="" style="width: 1.5em; height: 1.5em;"></i> Página web</a>
-            <a href="https://www.instagram.com/fabian_belmont19/" target="_blank"><i class="bi bi-instagram"></i> Instagram</a>
-            <a href="https://www.tiktok.com/@farian1498?lang=es" target="_blank"><i class="bi bi-tiktok"></i> Tiktok</a>
-            <a href="https://www.twitch.tv/fabiander14/about" target="_blank"><i class="bi bi-twitch"></i> Twitch</a>
-            <a href="https://www.youtube.com/@ancientfabian14" target="_blank"><i class="bi bi-youtube"></i> Youtube</a>
-            <a href="https://github.com/FabianAndrade14" target="_blank"><i class="bi bi-github"></i> GitHub</a>
-            <a href="https://www.linkedin.com/in/fabian-camilo-andrade-mesa-abb8b9235/" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
-        </div>
-    </div>
-
-    <div class="music-wrapper">
-        <div id="music-tooltip" class="music-tooltip"></div>
-        <button id="musicBtn" class="music-button">
-          <i class="bi bi-music-note-beamed"></i>
-        </button>
+  <main class="page">
+    <header class="profile">
+      <div class="profile-picture">
+        <img src="assets/img/Profile.jpg" alt="Fotografía de Fabian Camilo Andrade" onerror="this.hidden=true;this.nextElementSibling.hidden=false">
+        <span class="avatar-fallback" hidden>FA</span>
+        <span class="online-dot" title="Bienvenido a mi rincón geek"></span>
       </div>
+      <p class="eyebrow">EL RINCÓN GEEK DE</p>
+      <h1>FARIAN<span class="title-dot">.</span></h1>
+      <p class="handle">Fabian Camilo Andrade</p>
+      <h2>Videojuegos, historias y nostalgia <span aria-hidden="true">🎮</span></h2>
+      <p class="bio">Reseñas, análisis y reflexiones sobre los juegos que nos marcaron.</p>
 
-    <script src="script.js"></script>
-    
+      <nav class="social-icons" aria-label="Mis redes sociales">
+        <a href="https://www.youtube.com/@ancientfabian14" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="bi bi-youtube" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/fabian_belmont19/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+        <a href="https://www.tiktok.com/@farian1498?lang=es" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
+        <a href="https://www.twitch.tv/fabiander14/about" target="_blank" rel="noopener noreferrer" aria-label="Twitch"><i class="bi bi-twitch" aria-hidden="true"></i></a>
+      </nav>
+    </header>
+
+    <section class="featured" aria-labelledby="featured-title">
+      <div class="section-heading"><span class="section-line"></span><span>PARA EMPEZAR</span><span class="section-line"></span></div>
+      <a class="featured-card" id="featured-link" href="https://www.youtube.com/@ancientfabian14/videos" target="_blank" rel="noopener noreferrer" aria-label="Ver los videos de FARIAN en YouTube">
+        <div class="featured-art" aria-hidden="true">
+          <img class="featured-thumbnail" id="featured-thumbnail" alt="" hidden>
+          <span class="art-glow"></span>
+          <span class="art-decoration">VII</span>
+          <span class="art-name">FINAL FANTASY <b>VII</b></span>
+          <span class="play-circle"><i class="bi bi-play-fill"></i></span>
+        </div>
+        <div class="featured-copy">
+          <span class="feature-label"><i class="bi bi-stars" aria-hidden="true"></i> <span id="featured-label">VIDEO DESTACADO</span></span>
+          <h3 id="featured-title">Los recuerdos que definen nuestro destino</h3>
+          <p id="featured-description">Mi reflexión sobre Final Fantasy VII y las historias que permanecen con nosotros.</p>
+          <span class="feature-action"><span id="featured-action">Ver mis videos</span> <i class="bi bi-arrow-up-right" aria-hidden="true"></i></span>
+        </div>
+      </a>
+    </section>
+
+    <section class="videos-section" aria-labelledby="videos-heading">
+      <div class="section-heading"><span class="section-line"></span><h2 id="videos-heading">TAMBIÉN TE PUEDE GUSTAR</h2><span class="section-line"></span></div>
+      <p class="videos-intro">Una selección automática de mis videos, teniendo en cuenta publicaciones recientes y reproducciones.</p>
+      <div class="videos-grid" id="videos-grid" aria-busy="true">
+        <div class="video-skeleton" aria-hidden="true"><span></span><i></i><i></i></div>
+        <div class="video-skeleton" aria-hidden="true"><span></span><i></i><i></i></div>
+        <div class="video-skeleton" aria-hidden="true"><span></span><i></i><i></i></div>
+      </div>
+      <p class="videos-message" id="videos-message" role="status" aria-live="polite">Cargando videos de YouTube...</p>
+      <a class="videos-all-link" href="https://www.youtube.com/@ancientfabian14/videos" target="_blank" rel="noopener noreferrer">Ver todos mis videos <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+    </section>
+
+    <section class="links-section" aria-labelledby="links-heading">
+      <div class="section-heading"><span class="section-line"></span><h2 id="links-heading">MIS ENLACES</h2><span class="section-line"></span></div>
+      <div class="links">
+        <a class="link-card primary" href="https://www.youtube.com/@ancientfabian14" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon youtube"><i class="bi bi-youtube" aria-hidden="true"></i></span>
+          <span class="link-copy"><strong>Mi canal de YouTube</strong><small>Reseñas, análisis y reflexiones</small></span>
+          <i class="bi bi-arrow-up-right arrow" aria-hidden="true"></i>
+        </a>
+        <a class="link-card" href="https://www.instagram.com/fabian_belmont19/" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon instagram"><i class="bi bi-instagram" aria-hidden="true"></i></span>
+          <span class="link-copy"><strong>Instagram</strong><small>Fotografía, videojuegos y coleccionismo</small></span>
+          <i class="bi bi-arrow-up-right arrow" aria-hidden="true"></i>
+        </a>
+        <a class="link-card" href="https://www.tiktok.com/@farian1498?lang=es" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon tiktok"><i class="bi bi-tiktok" aria-hidden="true"></i></span>
+          <span class="link-copy"><strong>TikTok</strong><small>Clips y momentos geek</small></span>
+          <i class="bi bi-arrow-up-right arrow" aria-hidden="true"></i>
+        </a>
+        <a class="link-card" href="https://www.twitch.tv/fabiander14/about" target="_blank" rel="noopener noreferrer">
+          <span class="link-icon twitch"><i class="bi bi-twitch" aria-hidden="true"></i></span>
+          <span class="link-copy"><strong>Twitch</strong><small>Directos y partidas</small></span>
+          <i class="bi bi-arrow-up-right arrow" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="developer-section" aria-labelledby="developer-heading">
+      <div class="section-heading"><span class="section-line"></span><h2 id="developer-heading">MI LADO DEV</h2><span class="section-line"></span></div>
+      <p>También construyo experiencias más allá de los videojuegos.</p>
+      <div class="dev-links">
+        <a href="https://fabian-dev.vercel.app" target="_blank" rel="noopener noreferrer"><i class="bi bi-globe2" aria-hidden="true"></i> Portafolio <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+        <a href="https://github.com/FabianAndrade14" target="_blank" rel="noopener noreferrer"><i class="bi bi-github" aria-hidden="true"></i> GitHub <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/fabian-camilo-andrade-mesa-abb8b9235/" target="_blank" rel="noopener noreferrer"><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn <i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <span class="footer-icon"><i class="bi bi-controller" aria-hidden="true"></i></span>
+      <p>Juegos que no solo se juegan, también se sienten. <span aria-hidden="true">✨</span></p>
+      <small>© <span id="year">2026</span> FARIAN</small>
+    </footer>
+  </main>
+
+  <div class="music-wrapper">
+    <div id="music-tooltip" class="music-tooltip" role="status" aria-live="polite"></div>
+    <button id="musicBtn" class="music-button" type="button" aria-label="Reproducir música" aria-pressed="false" title="Reproducir o pausar música">
+      <i class="bi bi-music-note-beamed" aria-hidden="true"></i>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
